@@ -1,0 +1,76 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #FFE4E1; 
+}
+
+.cadastro {
+    background: #FFF0F5; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.cadastro input, .cadastro select, .cadastro button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pedidos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.em-execucao, .a-caminho {
+    flex: 1;
+    background: #FFD1DC; 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card {
+    background: #F8BBD0; 
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.card button {
+    background: #EC407A; 
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #D81B60;
+}
+
+@media (max-width: 768px) {
+    .pedidos {
+        flex-direction: column;
+    }
+}
+
+
+footer {
+    background-color: #C71585;
+    color: #FFD1DC; 
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+}

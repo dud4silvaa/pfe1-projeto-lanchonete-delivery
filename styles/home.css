@@ -1,1 +1,139 @@
-@import url(./style.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFE4E1; 
+}
+
+header {
+    background-color: #C2185B; 
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+header button {
+    background-color: #F48FB1; 
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #F06292;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #FFF0F5; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cadastro input, 
+.cadastro select {
+    padding: 10px;
+    border: 1px solid #F48FB1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.cadastro button {
+    background-color: #EC407A;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cadastro button:hover {
+    background-color: #D81B60;
+}
+
+.pedidos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.em-execucao, .a-caminho {
+    flex: 1;
+    background-color: #FFD1DC;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.em-execucao h2, .a-caminho h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #AD1457;
+}
+
+.card {
+    background-color: #F8BBD0;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    position: relative;
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+.card button {
+    background-color: #F06292;
+    color: white;
+    border: none;
+    padding: 6px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #D81B60;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .pedidos {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

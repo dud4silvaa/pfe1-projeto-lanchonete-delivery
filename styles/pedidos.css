@@ -1,1 +1,87 @@
-@import url(./style.css);
+main {
+    padding: 20px;
+    background: #FFE4E1; 
+}
+
+.table-container {
+    overflow-x: auto; 
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px; 
+    max-height: 400px; 
+    overflow-y: auto; 
+}
+
+table {
+    width: 100%;
+    min-width: 600px;  
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #F48FB1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+thead {
+    background: #F48FB1;
+    color: white;
+}
+
+th {
+    position: sticky;
+    top: 0; 
+    z-index: 1; 
+}
+
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: table; 
+    }
+}
+
+
+header {
+    background-color: #C2185B;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+header button {
+    background-color: #F48FB1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #EC407A;
+}
+
+
+footer {
+    background-color: #C71585;
+    color: #FFD1DC;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+}
